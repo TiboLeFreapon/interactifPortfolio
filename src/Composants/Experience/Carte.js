@@ -8,16 +8,20 @@ function Carte(props) {
   /*const [activeBouton, setActiveBouton] = useState(false);*/
 
   useEffect(() => {
-    setActiveBouton(true);
-    setAffichay(true);
-  }, [props.tableauMelangay]);
+    if (!props.modalEstAffiche) {
+      setActiveBouton(true);
+      setAffichay(true);
+    }
+  }, [props.tableauMelangay, props.modalEstAffiche]);
 
   useEffect(() => {
-    setTimeout(() => {
-      setActiveBouton(false);
-      setAffichay(false);
-    }, C_COMPETENCE.tempsCacherAnalyse);
-  }, [props.tableauMelangay]);
+    if (!props.modalEstAffiche) {
+      setTimeout(() => {
+        setActiveBouton(false);
+        setAffichay(false);
+      }, C_COMPETENCE.tempsCacherAnalyse);
+    }
+  }, [props.tableauMelangay, props.modalEstAffiche]);
 
   const surCliqueCarte = () => {
     props.fonctionChangement(props.id);

@@ -6,6 +6,7 @@ import Vie from "../Composants/Experience/Vie";
 import Defaite from "../Composants/Experience/Defaite";
 import ContenuExperience from "../Composants/Experience/ContenuExperience";
 import BarreTemps from "../Composants/Experience/BarreTemps";
+import ModalExplication from "../Composants/Generiques/ModalExplication";
 
 const C_COMPETENCE = require("../Données/cosntanteCompetence");
 
@@ -35,9 +36,14 @@ function ExperienceApp(props) {
   /*Pour le boutton replay*/
   const [tableau, setTableau] = useState(tableauMelangay);
   const [nbrVies, setNbrVies] = useState(C_COMPETENCE.nbrDeVie);
-  const [afficherBarTemps, setAfficherBarTemps] = useState(true);
-
+  const [afficherBarTemps, setAfficherBarTemps] = useState(false);
   const [afficherExperience, setAfficherExperience] = useState(false);
+  const [afficherModal, setAfficherModal] = useState(true);
+
+  const cacherModal = () => {
+    setAfficherModal(false);
+    setAfficherBarTemps(true);
+  };
 
   const recupChangement = (index) => {
     if (indexCarteRetournay.premierCarte === undefined) {
@@ -106,6 +112,7 @@ function ExperienceApp(props) {
       <Carte
         desactiver={desactiver}
         id={i}
+        modalEstAffiche={afficherModal}
         afficher={
           idCarteTouvay[i] === true ||
           i === indexCarteRetournay.premierCarte ||
@@ -151,6 +158,10 @@ function ExperienceApp(props) {
     contenu = (
       <div className="experience-jeux">
         <>
+          <ModalExplication
+            afficher={afficherModal}
+            cacherModal={cacherModal}
+          />
           <RetourAccueil />
           <div className="barre-temps">
             {afficherBarTemps && <BarreTemps tableau={tableau} />}
