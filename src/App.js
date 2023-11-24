@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import Accueil from "./Conteneur/Accueil";
 import Parcours from "./Conteneur/Parcours";
-import Experience from "./Conteneur/Experience";
+import ExperienceApp from "./Conteneur/ExperienceApp";
 import Loisirs from "./Conteneur/Loisir";
 
 const router = createBrowserRouter([
@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     element: <Accueil />,
   },
   { path: "/parcours", element: <Parcours /> },
-  { path: "/experience", element: <Experience /> },
+  { path: "/experience", element: <ExperienceApp /> },
   { path: "/loisirs", element: <Loisirs /> },
 ]);
 

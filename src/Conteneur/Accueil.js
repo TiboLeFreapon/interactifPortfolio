@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import BoutonAccueil from "../Composants/Accueil/BoutonAccueil";
+import Entete from "../Composants/Generiques/Entete";
 
 function Accueil() {
   return (
     <div className="accueil">
-      <nav>
+      <Entete />
+      <nav id="navigation-accueil">
         <Link to="/parcours">
           <BoutonAccueil sousApp="Parcours" />
         </Link>
