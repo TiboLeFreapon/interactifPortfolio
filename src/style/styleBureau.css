@@ -367,3 +367,24 @@
       display: flex;
       flex-direction: column;
     }
+
+
+    /************* LOISIRS**********************/
+
+
+    
+    .contenu-loisir{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .loisir{
+      width: 80%;
+      border-radius: 15px;
+      background-color: white;
+      margin: 20px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+    }

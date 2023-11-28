@@ -3,7 +3,7 @@ import "./App.css";
 import Accueil from "./Conteneur/Accueil";
 import Parcours from "./Conteneur/Parcours";
 import ExperienceApp from "./Conteneur/ExperienceApp";
-import Loisirs from "./Conteneur/Loisir";
+import Loisirs from "./Conteneur/Loisirs";
 
 const router = createBrowserRouter([
   {

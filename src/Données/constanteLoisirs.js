@@ -1,4 +1,4 @@
-module.exports = {
+export const loisirDonnees = {
   loisirs: [
     {
       id: 0,
