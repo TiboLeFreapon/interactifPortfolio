@@ -8,12 +8,12 @@ function ModalExplication(props) {
         <h1 className="titre-modal">Memorium</h1>
         <div className="explication">
           <span>
-            Pour accéder à mes expériences, essaye de passe d'abord cette étape.
+            Pour accéder à mes expériences, passe d'abord cette étape.
           </span>
           <span>Mémorise les cartes ! </span>
           <span>
             Une fois que les cartes se retournent, retrouve les paires en
-            cliquand sur les cartes.
+            cliquant sur les cartes 2 par 2.
           </span>
         </div>
         <div className="info-jeux">

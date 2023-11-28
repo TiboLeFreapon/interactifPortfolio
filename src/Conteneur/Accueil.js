@@ -3,8 +3,9 @@ import BoutonAccueil from "../Composants/Accueil/BoutonAccueil";
 import Entete from "../Composants/Generiques/Entete";
 
 function Accueil() {
+  console.log(window.screen.height);
   return (
-    <div className="accueil">
+    <div className="accueil" style={{ height: window.screen.height }}>
       <Entete />
       <nav id="navigation-accueil">
         <Link to="/parcours">

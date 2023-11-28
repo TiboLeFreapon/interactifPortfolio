@@ -1,0 +1,369 @@
+    
+    #navigation-accueil{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:50px;
+      height: 80%;
+      justify-content:center;
+    
+    }
+    
+    .accueil {
+      /*height: 100%;*/
+      margin: auto;
+    }
+    
+    .bouton-accueil{
+      border-radius: 15px;
+      height: 100px;
+      width: 500px;
+      font-size: 40px;
+      border: 4px solid gray;
+    }
+    
+    .bouton-accueil:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    }
+    
+    .contient-bouton-accueil{
+    }
+    
+    
+    .desactiver{
+      opacity: 0.5;
+      cursor: default !important;
+    }
+    
+    /*--------------------------Bouton Accueil ---------------------*/
+    
+    .bouton-retour-accueil{
+      margin: 10px;
+      transform: scale(1.5);
+    }
+    
+    /*-----------------------------ENTENE---------------------------*/
+    
+    
+    
+    .entete{
+      display: flex;
+      justify-content: space-between;
+      }
+    
+      .contenu-bouton-traduction{
+        display: flex;
+        width: 100px;
+        gap: 10px;
+        align-items: center;
+      }
+    
+    
+      .bouton-traduction{
+      flex-grow: 1;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.7)
+      }
+    
+    
+      .bouton-traduction.inactif{
+      opacity: 0.5;  
+      background-color: rgba(255, 255, 255, 0.1)
+      }
+      
+    
+    /*--------------------------Experience ---------------------*/
+    
+    
+    .experience-jeux{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 600px;
+      margin: 0 auto;
+    }
+    .carte{
+      margin: 10px auto;
+      border: 1px solid white;
+      width: 80%;
+      height: 80px;
+      background-color: white;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+    
+    .contenu-carte{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+      max-width: 600px;
+      margin: 30px 0px;
+    }
+    
+    .verte{
+      border: 3px solid rgba(0, 255, 0);
+    }
+    
+    .contenu-vie{
+      margin: auto;
+      transform: scale(2);
+      margin-top: 20px;
+    }
+    
+    .vie, .recommencer-carte{
+      margin: 10px 5px;
+    }
+    .recommencer-carte{
+      cursor: pointer;
+    }
+    
+    
+    button:disabled {
+      color: unset;
+    }
+    
+    .display-none{
+      display: none !important;
+    }
+    
+    .experience{
+      border-radius: 15px;
+        background: white;
+        padding:15px 10px 10px 10px;
+        margin: 50px auto;
+        width: 400px;
+    }
+    
+    
+    .missions{
+      margin-top: 10px;
+      cursor: pointer;
+      width:auto;
+      background: rgba(255, 0, 0, 0.2);
+      border-radius: 5px;
+      padding: 10px;
+    }
+    
+    .button-mission{
+      
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      text-align: left;
+      height: 50px;
+      
+      font-size: larger;
+    }
+    
+    .resume{
+      margin: 5px 0px;
+    }
+    .taches-contenu{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    
+    .taches{
+      border-radius: 5px;
+      background-color: white;
+      opacity: 0.8;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .societe{
+      font-size: larger;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+    
+    .date{
+      font-size: smaller;
+      margin-bottom: 10px;
+      text-align: end;
+    }
+    
+    
+    .technologies{
+      margin: 50px 0px 10px 0px;
+      width:auto;
+      background: rgba(0, 255, 0, 0.2);
+      border-radius: 5px;
+      padding: 10px;
+    }
+    
+    .titre-techno{
+    height: 50px;
+    }
+    
+    .techno-utilise{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .techno{
+      border-radius: 5px;
+      margin: 5px;
+      padding: 5px;
+      background-color: white;
+      opacity: 0.8;
+    }
+    
+    .caret-mission{
+      color: rgba(255, 0, 0, 0.3);
+    }
+    
+    .retourne-caret{
+      transform: rotate(180deg);
+    }
+    
+    .barre-temps{
+      width: 80%;
+      background-color: transparent;
+      margin: 10px auto;
+      height: 30px;
+    }
+    
+    .contenant-barre-temps{
+      width: 100%;
+      height: 30px;
+      border-radius: 10px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .barre-diminue{
+      animation: ecoulement 5.5s linear;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      background-image:  linear-gradient(180deg, rgb(165, 245, 165),rgb(68, 255, 68));
+      animation-fill-mode: forwards;
+    }
+    
+    
+    @keyframes ecoulement{
+      0%{
+        width: 100%;
+      }
+      100%{
+        width: 0%;
+      }
+    }
+    
+    
+    .animation-agrandir{
+    animation: bouing-bouing 2s linear ;
+    animation-iteration-count: infinite;
+    }
+    
+    
+    @keyframes bouing-bouing{
+      0%{
+        transform: scale(1.5);
+      }
+      50%{
+        transform: scale(2.5);
+      }
+      
+      100%{
+        transform: scale(1.5);
+      }
+    }
+    
+    
+    
+    .bravo, .defaite{
+      display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    
+    .bien-jouer, .defaite-chaine{
+      text-align: center;
+      font-size: xx-large;
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .bouton-bravo{
+      height: 50px;
+      border-radius: 10px;
+      transform: scale(1.5);
+      border: none;
+      padding: 15px;
+    }
+    
+    
+    /*----------------------------------MODAL--------------------------------------*/
+    .voile{
+      z-index: 10;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      top: 0px;
+      left: 0;
+      background: rgba(0,0,0, 0.35);
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }    
+    
+    .modal{
+      width: 400px;
+      background: white;
+      text-align: center;
+      height: auto;
+      border-radius: 15px;
+      border: 5px solid;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .info-jeux, .explication{
+      font-weight: 400;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+    }
+    
+    .info-jeux{
+      text-align: left;
+    }
+    
+    .bouton-pret{
+      height: 50px;
+      width: 200px;
+      font-size: 20px;
+      font-weight: 500;
+      margin: auto
+    }
+    
+    .titre-modal{
+      margin-top: 10px
+    }
+    
+
+
+    /*------------------PARCOURS------------------------*/
+
+    .contenu-parcours{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .parcour{
+      width: 80%;
+      border-radius: 15px;
+      background-color: white;
+      margin: 20px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+    }
