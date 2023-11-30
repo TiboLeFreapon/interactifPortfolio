@@ -9,10 +9,15 @@ function Entete(props) {
   const [indexLangue, setIdexLangue] = useState(0);
   return (
     <div className="entete">
-      <div className="retour">
-        <RetourAccueil />
-      </div>
-      <div className="contenu-bouton-traduction">
+      {props.accueil ? (
+        ""
+      ) : (
+        <div className="retour">
+          <RetourAccueil />
+        </div>
+      )}
+
+      <div className="contenu-bouton-traduction" style={{ display: "none" }}>
         {C_GEN.langues.map((langue, idx) => (
           <Button
             key={idx}

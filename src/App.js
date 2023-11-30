@@ -4,6 +4,8 @@ import Accueil from "./Conteneur/Accueil";
 import Parcours from "./Conteneur/Parcours";
 import ExperienceApp from "./Conteneur/ExperienceApp";
 import Loisirs from "./Conteneur/Loisirs";
+import Version from "./Composants/PiedPage/Version";
+import Contact from "./Composants/PiedPage/Contact";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +15,8 @@ const router = createBrowserRouter([
   { path: "/parcours", element: <Parcours /> },
   { path: "/experience", element: <ExperienceApp /> },
   { path: "/loisirs", element: <Loisirs /> },
+  { path: "/version", element: <Version /> },
+  { path: "/contact", element: <Contact /> },
 ]);
 
 function App() {

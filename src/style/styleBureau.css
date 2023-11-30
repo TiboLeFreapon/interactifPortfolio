@@ -13,13 +13,25 @@
       /*height: 100%;*/
       margin: auto;
     }
+
+    .entete-accueil{
+      color: white;
+      font-size: xx-large;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: auto;
+    }
     
     .bouton-accueil{
       border-radius: 15px;
       height: 100px;
       width: 500px;
       font-size: 40px;
-      border: 4px solid gray;
+      
+      border: none;
+      background-color: rgba(240, 248, 255, 0.3);
+      color: white;
     }
     
     .bouton-accueil:hover{
@@ -41,6 +53,7 @@
     .bouton-retour-accueil{
       margin: 10px;
       transform: scale(1.5);
+      
     }
     
     /*-----------------------------ENTENE---------------------------*/
@@ -48,6 +61,7 @@
     
     
     .entete{
+      position: fixed;
       display: flex;
       justify-content: space-between;
       }
@@ -107,6 +121,10 @@
       border: 3px solid rgba(0, 255, 0);
     }
     
+    .rouge{
+      border: 3px solid rgb(255, 0, 0);
+    }
+    
     .contenu-vie{
       margin: auto;
       transform: scale(2);
@@ -132,17 +150,17 @@
     .experience{
       border-radius: 15px;
         background: white;
-        padding:15px 10px 10px 10px;
+        padding:25px;
         margin: 50px auto;
         width: 400px;
     }
     
     
     .missions{
-      margin-top: 10px;
+      margin-top: 30px;
       cursor: pointer;
       width:auto;
-      background: rgba(255, 0, 0, 0.2);
+      background: rgba(195, 0, 255, 0.2);
       border-radius: 5px;
       padding: 10px;
     }
@@ -172,7 +190,7 @@
       background-color: white;
       opacity: 0.8;
       padding: 5px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
     }
     
     .societe{
@@ -191,7 +209,7 @@
     .technologies{
       margin: 50px 0px 10px 0px;
       width:auto;
-      background: rgba(0, 255, 0, 0.2);
+      background: rgba(0, 26, 255, 0.2);
       border-radius: 5px;
       padding: 10px;
     }
@@ -387,4 +405,80 @@
       padding: 15px;
       display: flex;
       flex-direction: column;
+    }
+
+
+    /*------------------pied-page------------------*/
+
+    .pied-page{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      position: fixed;
+      left: 50%;
+      right: 50%;
+    }
+
+    .button-pied-page{
+      width: 200px;
+      height: 75px;
+      border: none;
+      background-color: rgba(240, 248, 255, 0.1);
+      color: white;
+      border-radius: 15px;
+    }
+
+    .button-pied-page:hover{
+cursor: pointer;
+background-color: rgba(240, 248, 255, 0.3);
+    }
+
+    /*-----------------CONTACT-------------------------*/
+    .contenu-contact{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      gap: 50px;
+    background: rgba(255, 255, 255, 0.342);
+    border-radius: 15px;
+    align-items: center;
+    padding: 40px;
+    margin-top: 150px;
+    }
+
+    span.contact{
+      font-size: 23px;
+    }
+
+    /********VERSION***********/
+    .contenu-version{
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      background: rgba(255, 255, 255, 0.089);
+      border-radius: 15px;
+      margin-top: 150px;
+      padding: 20px;
+    }
+
+    .versions{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .icone-version{
+      transform: scale(2);
+    }
+
+    .version-fonctionnalite{
+      padding: 10px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .fonctionalite{
+      padding: 30px;
     }

@@ -7,6 +7,7 @@ import Defaite from "../Composants/Experience/Defaite";
 import ContenuExperience from "../Composants/Experience/ContenuExperience";
 import BarreTemps from "../Composants/Experience/BarreTemps";
 import ModalExplication from "../Composants/Generiques/ModalExplication";
+import Entete from "../Composants/Generiques/Entete";
 
 const C_COMPETENCE = require("../Données/cosntanteCompetence");
 
@@ -119,6 +120,10 @@ function ExperienceApp(props) {
           i === indexCarteRetournay.deuxiemeCarte
         }
         key={"carte-" + i}
+        rouge={
+          indexCarteRetournay.premierCarte !== undefined &&
+          indexCarteRetournay.deuxiemeCarte !== undefined
+        }
         plusDeVie={nbrVies === 0}
         trouvay={idCarteTouvay[i] === true}
         competences={tableau[i]}
@@ -153,7 +158,12 @@ function ExperienceApp(props) {
 
   let contenu;
   if (afficherExperience && Object.keys(idCarteTouvay).length === 12) {
-    contenu = <ContenuExperience />;
+    contenu = (
+      <>
+        <Entete />
+        <ContenuExperience />
+      </>
+    );
   } else {
     contenu = (
       <div className="experience-jeux">
@@ -175,7 +185,7 @@ function ExperienceApp(props) {
           />
           {Object.keys(idCarteTouvay).length === 12 && (
             <Bravo
-              chaine="Accerder aux experiences"
+              chaine="Accéder aux expériences"
               afficheExperience={afficheExperience}
             />
           )}

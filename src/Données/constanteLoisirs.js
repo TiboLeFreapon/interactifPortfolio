@@ -10,13 +10,13 @@ export const loisirDonnees = {
       id: 1,
       name: "Echec",
       explication:
-        "J'adore ce jeu. Mon pick elo a été 1200. J'ai un peu arreté car il fallait apprendre les ouvertures pour pouvoir s'améliorer. Je joue principalement pour le côté stratégique du jeu.",
+        "J'adore ce jeu. Mon pick elo a été 1350. Je joue principalement pour le côté stratégique du jeu.",
     },
     {
       id: 2,
       name: "Sport",
       explication:
-        "J'ai été sportif de haut niveau dans le football en tant que gardien de but. J'ai joué contre Mbappé quand il était encore à Monaco en 17ans National. Désormais, j'ai arrêté le foot mais continue a faire du sport.",
+        "J'ai été sportif de haut niveau dans le football en tant que gardien de but. Toujours partant pour un peu de sport.",
     },
     {
       id: 3,

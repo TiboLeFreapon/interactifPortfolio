@@ -65,7 +65,7 @@ module.exports = {
           resume:
             "Création d'un outil permettant l'audit de l'Active Directory de nos clients.",
           taches: [
-            "Développement des fonctionnalités Powershell afin de récupérer ",
+            "Développement des fonctionnalités Powershell afin de récupérer les informalions relatif à l'Active Directory ",
 
             "Traitement des informations récupérées pour en faire un tableau de bord version web.",
           ],

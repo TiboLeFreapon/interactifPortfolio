@@ -39,12 +39,19 @@ function Carte(props) {
     }
   }
 
+  let classNom = "carte ";
+  if (props.trouvay) {
+    classNom += " verte";
+  } else if (props.afficher && props.rouge) {
+    classNom += " rouge";
+  }
+
   return (
     <button
       disabled={
         activeBouton || props.trouvay || props.plusDeVie || props.desactiver
       }
-      className={props.trouvay ? "carte verte" : "carte"}
+      className={classNom}
       onClick={surCliqueCarte}
     >
       {contenuAffichay}

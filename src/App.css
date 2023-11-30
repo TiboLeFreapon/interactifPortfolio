@@ -3,7 +3,7 @@
 
 body, html{
   height: 100%;
-  background-color: rebeccapurple;
+  background-color: rgb(83, 61, 105);
 }
 
 body::-webkit-scrollbar {
