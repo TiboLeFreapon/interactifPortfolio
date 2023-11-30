@@ -10,7 +10,7 @@ function ModalExplication(props) {
           <span>
             Pour accéder à mes expériences, passe d'abord cette étape.
           </span>
-          <span>Mémorise les cartes ! </span>
+          <span>Mémorise mes atouts en tant que développeur ! </span>
           <span>
             Une fois que les cartes se retournent, retrouve les paires en
             cliquant sur les cartes 2 par 2.
